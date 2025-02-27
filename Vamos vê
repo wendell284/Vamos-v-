@@ -1,0 +1,139 @@
+<html lang="pt-BR">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Amor Eterno - Homenagem para Isabela Assis
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <script>
+   document.addEventListener('DOMContentLoaded', function() {
+     const startDate = new Date('2019-01-22');
+     const today = new Date();
+     const diffTime = Math.abs(today - startDate);
+     const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+     document.getElementById('days-count').innerText = diffDays;
+   });
+  </script>
+ </head>
+ <body class="bg-gray-100 font-roboto">
+  <header class="bg-pink-500 text-white p-4 text-center">
+   <h1 class="text-3xl font-bold">
+    Amor Eterno
+   </h1>
+   <p class="text-lg">
+    Homenagem para Isabela Assis
+   </p>
+  </header>
+  <main class="p-4">
+   <section class="mb-8">
+    <h2 class="text-2xl font-bold mb-4">
+     Galeria de Fotos e Vídeos
+    </h2>
+    <div class="bg-white p-4 rounded-lg shadow-md">
+     <input accept="image/*,video/*" class="w-full p-2 border border-gray-300 rounded-lg mb-4" multiple="" type="file"/>
+     <button class="bg-pink-500 text-white px-4 py-2 rounded-lg">
+      Adicionar
+     </button>
+    </div>
+   </section>
+   <section class="mb-8">
+    <h2 class="text-2xl font-bold mb-4">
+     Músicas
+    </h2>
+    <div class="bg-white p-4 rounded-lg shadow-md mb-4">
+     <input accept="audio/*" class="w-full p-2 border border-gray-300 rounded-lg mb-4" multiple="" type="file"/>
+     <button class="bg-pink-500 text-white px-4 py-2 rounded-lg">
+      Adicionar Música
+     </button>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+     <audio class="w-full h-auto rounded-lg shadow-md" controls="">
+      <source src="https://example.com/mulher-maravilha.mp3" type="audio/mp3"/>
+      Seu navegador não suporta o elemento de áudio.
+     </audio>
+    </div>
+   </section>
+   <section class="mb-8">
+    <h2 class="text-2xl font-bold mb-4">
+     Vídeos do YouTube
+    </h2>
+    <div class="bg-white p-4 rounded-lg shadow-md mb-4">
+     <input class="w-full p-2 border border-gray-300 rounded-lg mb-4" placeholder="URL do vídeo do YouTube" type="text"/>
+     <button class="bg-pink-500 text-white px-4 py-2 rounded-lg">
+      Adicionar Vídeo
+     </button>
+    </div>
+   </section>
+   <section class="mb-8">
+    <h2 class="text-2xl font-bold mb-4">
+     Calendário de Datas Especiais
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+     <div class="bg-white p-4 rounded-lg shadow-md">
+      <h3 class="text-xl font-bold mb-2">
+       Aniversário de Namoro
+      </h3>
+      <p class="text-gray-700">
+       22 de Janeiro
+      </p>
+     </div>
+     <div class="bg-white p-4 rounded-lg shadow-md">
+      <h3 class="text-xl font-bold mb-2">
+       Aniversário de Isabela
+      </h3>
+      <p class="text-gray-700">
+       18 de Novembro
+      </p>
+     </div>
+    </div>
+   </section>
+   <section class="mb-8">
+    <h2 class="text-2xl font-bold mb-4">
+     Mapa do Amor
+    </h2>
+    <div class="bg-white p-4 rounded-lg shadow-md">
+     <iframe class="w-full h-64 rounded-lg shadow-md" frameborder="0" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d1895277.276073799!2d-44.10409399999999!3d-21.174377999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m3!3m2!1d-22.9068467!2d-43.1728965!4m3!3m2!1d-19.9673387!2d-44.1981616!4m3!3m2!1d-19.9673387!2d-44.1981616!5e0!3m2!1spt-BR!2sbr!4v1633021234567!5m2!1spt-BR!2sbr">
+     </iframe>
+     <p class="text-center text-gray-700 mt-4">
+      Distância: 450 km
+     </p>
+    </div>
+   </section>
+   <section class="mb-8">
+    <h2 class="text-2xl font-bold mb-4">
+     Contagem de Dias
+    </h2>
+    <div class="bg-white p-4 rounded-lg shadow-md text-center">
+     <p class="text-3xl font-bold text-pink-500">
+      <span id="days-count">
+      </span>
+      dias desde que nos conhecemos
+     </p>
+     <p class="text-gray-700 mt-2">
+      Desde 22 de Janeiro de 2019
+     </p>
+    </div>
+   </section>
+   <section class="mb-8">
+    <h2 class="text-2xl font-bold mb-4">
+     Mensagens de Amor
+    </h2>
+    <div class="bg-white p-4 rounded-lg shadow-md">
+     <textarea class="w-full h-32 p-2 border border-gray-300 rounded-lg" placeholder="Escreva uma mensagem de amor para Isabela..."></textarea>
+     <button class="mt-2 bg-pink-500 text-white px-4 py-2 rounded-lg">
+      Enviar
+     </button>
+    </div>
+   </section>
+  </main>
+  <footer class="bg-pink-500 text-white p-4 text-center">
+   <p>
+    © 2023 Amor Eterno. Todos os direitos reservados.
+   </p>
+  </footer>
+ </body>
+</html>
